@@ -1,0 +1,6 @@
+framework module Pods_YMobileData {
+  umbrella header "Pods-YMobileData-umbrella.h"
+
+  export *
+  module * { export * }
+}

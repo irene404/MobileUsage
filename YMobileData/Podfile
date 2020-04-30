@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+platform :ios, "8.0"
+#source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git'
+#source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecsMirror.git'
+
+def common_pods
+    pod 'MJRefresh'
+    pod 'Masonry'
+    pod 'Alamofire'
+end
+
+target 'YMobileData' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+#  pod 'MJRefresh'
+#  pod 'Masonry'
+#  pod 'Alamofire'
+    common_pods
+
+end
+
+target 'YMobileDataTests' do
+
+    common_pods
+
+end
+
+target 'YMobileDataUITests' do
+
+    common_pods
+
+end
